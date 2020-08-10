@@ -4,8 +4,21 @@
  * and open the template in the editor.
  */
 
-$(document).ready(function(){
+function myfunction(){
+    //  #testbtn
     $('#testbtn').click(function(){
-        $('body h1').load('/part.html');
+        $('body h1').load('/part.html p a');
+        
+//        $('body h1').mouseenter(function(){
+//            $('body h1').load('/part_1.html p');
+//            
+//            $('body h1').mouseleave(function(){
+//                $('body h1').load('/part_2.html p');
+//            });
+//        });
     });
-});
+    
+    
+}
+
+$(document).ready(myfunction);
