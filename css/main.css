@@ -17,3 +17,7 @@ h1 {
     padding-bottom: 30px;
     padding-left: 60px; 
 }
+
+.partClass {
+    background-color: blueviolet;
+}

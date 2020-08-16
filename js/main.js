@@ -7,13 +7,13 @@
 function myfunction(){
     //  #testbtn
     $('#testbtn').click(function(){
-        $('body h1').load('/part.html p a');
+        $('body .k').load('/part.html p a');
         
-        $('body h1').mouseenter(function(){
-            $('body h1').load('/part_1.html p');
+        $('body .k').mouseenter(function(){
+            $('body .k').load('/part_1.html');
             
-            $('body h1').mouseleave(function(){
-                $('body h1').load('/part_2.html p');
+            $('body .k').mouseleave(function(){
+                $('body .k').load('/part_2.html');
             });
         });
     });
