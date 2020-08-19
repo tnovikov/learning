@@ -6,16 +6,24 @@
 
 
 $(document).ready(function(){
-    $('#testbtn').click(function(){
-        $('body .k').load('/part.html p a');
+    $('.baloonLink').click(function(event){
         
-    });
-    
-    $('body .k').mouseenter(function(){
-        $('body .k').load('/part_1.html');
-    });
-
-    $('body .k').mouseleave(function(){
-        $('body .k').load('/part_2.html');
+        thisJQuery = $(this);
+        dataId = thisJQuery.attr('data-id');
+        cssSelector = '.baloon[data-id="' + dataId + '"]';
+        topCoordinate = event.pageY;
+        leftCoordinate = event.pageX;
+        
+        alert(thisJQuery);
+        alert(dataId);
+        alert(cssSelector);
+        alert(topCoordinate);
+        alert(leftCoordinate);
+        
+        baloon = $(cssSelector);
+        baloon.css('top', topCoordinate);
+        baloon.css('left', leftCoordinate)
+//        baloon.show();
+        baloon.fadeIn();
     });
 });
