@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('span.baloonLink').click(function(event){
 
         thisJQuery = $(this);
-//        alert(thisJQuery);
+        alert(thisJQuery);
         dataId = thisJQuery.attr('data-asd');
         alert(dataId); // first / second
         cssSelector = 'div.baloon[data-asd="' + dataId + '"]';
@@ -20,13 +20,13 @@ $(document).ready(function(){
         baloon = $(cssSelector);
         
         topCoordinate = event.pageY;
-//        alert(topCoordinate);
+        alert(topCoordinate);
         leftCoordinate = event.pageX;
-//        alert(leftCoordinate);
+        alert(leftCoordinate);
         
         baloon.css('top', topCoordinate);
         baloon.css('left', leftCoordinate);
         baloon.show();
-//        baloon.fadeIn();
+        baloon.fadeIn();
     });
 });

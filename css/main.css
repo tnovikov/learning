@@ -11,3 +11,11 @@
     border-bottom: 1px dashed #000080;
     cursor: pointer;
 }
+#ton {
+    //margin-top: 50px;
+}
+.Less {
+    border: 3px black dotted;
+    width: 200px;
+    height: 100px;
+}
