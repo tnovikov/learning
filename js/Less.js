@@ -10,10 +10,15 @@
 //alert('lef');
 //    });
 //});
-$(document).ready(function(){
-    $( "#but").click(function(){
-$( '#div-1' ).prepend( $('#div-2 input') );
-$( '#div-2' ).prepend( $('#div-1 input') );
+$(document).ready(function () {
+    $('input[type="button"]').click(function () {
+        
+        firstInput = $('#div-2 input');
+        secondInput = $('#div-1 input');
+        
+        $('#div-1').prepend(firstInput);
+        
+        $('#div-2').prepend(secondInput);
     });
 });
  
