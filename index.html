@@ -7,15 +7,26 @@
         <link href="css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <h1>Hello world</h1>
-        <input type="button" id="testbtn" value="value" />
-        <div class="k">
-            <h3 id="e">
-                Hi mir
-            </h3>  
-            <h2 id="a">
-                Hearts Of Iron 4
-            </h2>
-        </div>
+        <script>
+        function printFibonachi(start, num){
+            var first = 0;
+            var y = 1;
+            var i = 0;
+            while (i < num) {
+                z = first+y;
+                 if (i >= start) {
+                    console.log(z);
+//                    console.log(first);
+//                    console.log(y);
+                } else {
+                    alert(z);
+                }
+                first = y;
+                y = z;
+                i = i+1;
+            }
+          }
+          printFibonachi(5, 15);
+        </script>
     </body>
 </html>
