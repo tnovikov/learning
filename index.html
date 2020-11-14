@@ -8,25 +8,20 @@
     </head>
     <body>
         <script>
-        function printFibonachi(start, num){
-            var first = 0;
-            var y = 1;
-            var i = 0;
-            while (i < num) {
-                z = first+y;
-                 if (i >= start) {
-                    console.log(z);
-//                    console.log(first);
-//                    console.log(y);
-                } else {
-                    alert(z);
-                }
-                first = y;
-                y = z;
-                i = i+1;
-            }
-          }
-          printFibonachi(5, 15);
+        function average(quantity) {
+           var i = 0;
+           var sum = 0;
+           while (i < quantity) {
+               i = i+1;
+               x = i;
+               var num = prompt("Введите число №" + x, Math.random() * 10000);
+              // alert("Вы ввели " + num);
+             sum = sum + parseInt(num);
+           //  alert(sum);
+           }
+           alert(sum/quantity);
+        }
+        average(4);
         </script>
     </body>
 </html>
