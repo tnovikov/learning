@@ -9,30 +9,16 @@
     <body>
         <script>
             function isSimple(number) {
-                var mas = [];
-                var del = [];
-                var prost = [];
-                if(number < 2) {
-                } else {
-                    mas.push(number);
-                }
-             //   alert(mas);
-                for(i = 0; i < number; i++) {
-                    var y = number / i;
-                    del.push(y);
-                }
-            //    alert(del);
-                for(i = 0; i < del.length + 1; i++) {
-                    if(parseInt(del[i]) == del[i]) {
-                        prost.push(del[i])
-                    }
-                }
-             //  alert(prost);
-                if(prost.length > 2) {
-                    return false;
-                } else {
+                if (number >= 1 && number < 4) {
                     return true;
                 }
+                for (i = 2; i <= (number / 2); i++) {
+                    console.log(i);
+                    if (number % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
             }
 
             if (isSimple(parseInt(prompt('Введите число')))) {
