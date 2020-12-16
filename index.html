@@ -8,20 +8,233 @@
     </head>
     <body>
         <script>
-        function average(quantity) {
-           var i = 0;
-           var sum = 0;
-           while (i < quantity) {
-               i = i+1;
-               x = i;
-               var num = prompt("Введите число №" + x, Math.random() * 10000);
-              // alert("Вы ввели " + num);
-             sum = sum + parseInt(num);
-           //  alert(sum);
-           }
-           alert(sum/quantity);
-        }
-        average(4); 
+            function isSimple(number) {
+                var mas = [];
+                var del = [];
+                var prost = [];
+                if(number < 2) {
+                } else {
+                    mas.push(number);
+                }
+             //   alert(mas);
+                for(i = 0; i < number; i++) {
+                    var y = number / i;
+                    del.push(y);
+                }
+            //    alert(del);
+                for(i = 0; i < del.length + 1; i++) {
+                    if(parseInt(del[i]) == del[i]) {
+                        prost.push(del[i])
+                    }
+                }
+             //  alert(prost);
+                if(prost.length > 2) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            if (isSimple(parseInt(prompt('Введите число')))) {
+                console.log('Это простое число');
+            } else {
+                console.log('Это не простое число');
+            }
         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script>
+             function moreOrNot(arrayLength, demiliter) {
+                 var massiv = [];
+                 var sum1 = 0;
+                 var sum2 = 0;
+                 for (i = 1; i <= arrayLength; i++) {
+                     massiv.push(i);
+                 }
+                 for (i = 0; i < demiliter; i++) {
+                     sum1 = sum1 + massiv[i];
+                 }
+                 for (i = demiliter; i < massiv.length; i++) {
+                     sum2 = sum2 + massiv[i];
+                 }
+                 console.log(sum1);
+                 console.log(sum2);
+                 return sum1 > sum2;
+                 alert(massiv);
+             }
+             if (moreOrNot(15, 14)) {
+                 alert('More!')
+             } else {
+                 alert('Less!')
+             }
+         </script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<script>
+            function moreThanPrevious(numberArray) {
+                var result = [];
+                for (i = 1; i < numberArray.length; i++) {
+                    if(numberArray[i] > numberArray[i-1]) {
+                        result.push(numberArray[i]);
+                    }
+                }
+                return result;
+            }
+            alert(moreThanPrevious([12, 85, 78, 52, 107, 85, 8, 49, 5]));
+        </script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--    <script>
+                function Int(number) {
+                    var x = Number.isInteger(number / 2);
+                    if (x) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+                function oddSum(sourceNumber) {
+                    var sum = 0;
+                    var sourNumStr = sourceNumber.toString();
+                    var natNum = sourNumStr.split('');
+                    var evenNum = [];
+                    for (i = 0; i < natNum.length; i++) {
+                        if (Int(natNum[i])) {
+                            evenNum.push(natNum[i]);
+                        }
+                       sum = sum + parseInt(natNum[i]);
+                    }
+                    return sum;
+                }
+                document.body.innerHTML = oddSum(485754241934784656);
+            </script>   -->         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--  <script>
+              function massivexample(quantity) {
+                  var mas = [];
+                  for (i = 0; i < quantity; i++) {
+                      var inseret = prompt("Введите число или слово/фразу/предложение", 0);
+                      var x = mas.push(inseret);
+                  }
+                  var check = confirm("Считать данное как число?");
+                  alert(mas);
+  //            alert(quantity);
+  //            alert(check);
+                  var masFiltered = [];
+                  if (check) {
+                      for (i = 0; i < mas.length; i++) {
+                          if (mas[i] == parseInt(mas[i])) {
+                              masFiltered.push(mas[i]);
+                          }
+                      }
+                      masFiltered.sort(function (a, b) {
+                          return a - b;
+                      });
+                      alert(masFiltered);
+                  } else {
+                      for (i = 0; i < mas.length; i++) {
+                          if (mas[i] == parseInt(mas[i])) {
+                          } else {
+                              masFiltered.push(mas[i]);
+                          }
+                      }
+                      alert(masFiltered);
+                  }
+              }
+              massivexample(12);
+          </script>-->
+        <!--        <script>
+                    function ifodd(z) {
+                        if (z % 2 == 0) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                    function median(quantity) {
+        //            var num = prompt('Введите начало массива', 0);
+        //            var mas = [num];
+        
+        
+                        var mas = [];
+                        for (i = 0; i < quantity; i = i + 1) {
+                            x = prompt("Введите нужное число для массива", Math.round(Math.random() * 100));
+                            mas.push(parseInt(x));
+                        }
+                        alert(mas);
+                        mas.sort(function (a, b) {
+                            return a - b;
+                        });
+                        alert(mas);
+                        alert(mas.length);
+                        middle = Math.round(mas.length / 2);
+                        if (ifodd(mas.length)) {
+                            alert(middle);
+                            sum = (mas[middle - 1] + mas[middle])
+                            alert(sum / 2)
+                        } else {
+                            alert(mas[middle - 1]);
+                        }
+                    }
+                    median(5);
+                </script>-->
     </body>
 </html>
