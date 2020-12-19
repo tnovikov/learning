@@ -19,12 +19,17 @@
                 }
                 return true;
             }
-
-            if (isSimple(parseInt(prompt('Введите число')))) {
-                console.log('Это простое число');
-            } else {
-                console.log('Это не простое число');
+            
+            function searchForSimple(number) {
+                var mas = [];
+                for(i = 0; i < number; i++) {
+                    if(isSimple(i)) {
+                        mas.push(i);
+                    }
+                }
+                alert(mas);
             }
+            console.log(searchForSimple(4));
         </script>
 
 
