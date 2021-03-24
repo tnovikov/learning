@@ -1,10 +1,13 @@
-var one = document.querySelectorAll('.one');
-two = document.getElementsByClassName("one");
-console.log(one);
-console.log(two);
+document.addEventListener("DOMContentLoaded", function () {
+    var one = document.querySelectorAll('.one');
+// two = document.getElementsByClassName("one");
+    console.log(one);
+// console.log(two);
 
-//two[0].style.width = '150px';
-//one[0].style.width = "150px";
+    one[0].style.width = "150px";
+// two[0].style.width = '150px';
+
+});
 
 
 /* var massiv = [];
