@@ -1,21 +1,22 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var one = document.querySelectorAll('.one');
+two = document.getElementsByClassName("one");
+console.log(one);
+console.log(two);
+
+//two[0].style.width = '150px';
+//one[0].style.width = "150px";
 
 
-$(document).ready(function(){
-    $('#testbtn').click(function(){
-        $('body .k').load('/part.html p a');
-        
-    });
-    
-    $('body .k').mouseenter(function(){
-        $('body .k').load('/part_1.html');
-    });
-
-    $('body .k').mouseleave(function(){
-        $('body .k').load('/part_2.html');
-    });
-});
+/* var massiv = [];
+for (i = 0; i <= 10; i++) {
+    num = prompt("Enter number");
+    massiv.push(parseInt(num));
+}
+square = function (number) {
+    return Math.sqrt(number) * 3;
+}
+massiv[0] = modify(massiv[0], prompt)
+function modify(what, how) {
+    return how(what);
+}
+console.log(massiv[0]);*/
