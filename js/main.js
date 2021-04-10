@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var one = document.querySelectorAll('.one');
-// two = document.getElementsByClassName("one");
-    console.log(one);
-// console.log(two);
-
-    one[0].style.width = "150px";
-// two[0].style.width = '150px';
-
+    var Jap = /[А-Я][^А-Я\.]+([Яя]пон[^\s]*)[^\.]+\./g;
+    var One = document.getElementById("one");
+    console.log(One);
+    console.log(One.textContent.match(Jap));
+    One.textContent.replace(Jap,"<b>$0</b>")
 });
 
 
